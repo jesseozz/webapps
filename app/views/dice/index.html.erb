@@ -1,0 +1,13 @@
+<h1>Dice</h1>
+
+<% roll2 = rand(1...6) %>
+<% roll1 = rand(1...6) %>
+
+<p>Die 1: <%= roll1 %> </p>
+<p>Die 2: <%= roll2 %> </p>
+
+<p>Your total is <%= roll1 + roll2 %></p>
+
+<p>
+  <a href= "/dice"> Roll Again </a>
+</p>

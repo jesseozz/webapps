@@ -1,0 +1,13 @@
+<h1> Contacts </h1>
+
+<% contacts = Contact.all %>
+
+<p> Our database contains <%= contacts.count %> companies: </p>
+<ul>
+  <%for contact in contacts%>
+  <li>
+    <%= contact["first_name"] %> <%= contact["last_name"] %>
+  </li>
+  <%end%>
+</ul>
+*We do not condone the behavior of Elon Musk
