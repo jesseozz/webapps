@@ -1,0 +1,12 @@
+<h1>I love carnitas!!</h1>
+<p> carnitas is slow-cooked pork </p>
+
+<% fillings = ["Carnitas", "Carne Asada", "Al Pastor", "Pescado", "Pollo", "Gambas", "Cabeza", "Frijoles (v)", "Nopales (v)"] %>
+
+<p> we offer <%= fillings.count %> tacos: </p>
+
+<ul>
+  <% for filling in fillings %> 
+    <li> <%= filling %> </li>
+  <%end%>
+
